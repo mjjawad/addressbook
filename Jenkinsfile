@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Build the Package') {
             steps {
-                sh'mvn test'
+                sh'mvn clean package'
             }
         }
         stage('Deploy on  Slaves') {
